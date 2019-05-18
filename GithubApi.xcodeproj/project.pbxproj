@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		551E5DB2229084A90077F8B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DB1229084A90077F8B5 /* AppDelegate.swift */; };
 		551E5DB4229084A90077F8B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DB3229084A90077F8B5 /* ViewController.swift */; };
-		551E5DB7229084A90077F8B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DB5229084A90077F8B5 /* Main.storyboard */; };
 		551E5DB9229084A90077F8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DB8229084A90077F8B5 /* Assets.xcassets */; };
-		551E5DBC229084A90077F8B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DBA229084A90077F8B5 /* LaunchScreen.storyboard */; };
 		551E5DC7229084A90077F8B5 /* GithubApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DC6229084A90077F8B5 /* GithubApiTests.swift */; };
 		551E5DD2229084A90077F8B5 /* GithubApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */; };
 /* End PBXBuildFile section */
@@ -37,9 +35,7 @@
 		551E5DAE229084A90077F8B5 /* GithubApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E5DB1229084A90077F8B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		551E5DB3229084A90077F8B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		551E5DB6229084A90077F8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		551E5DB8229084A90077F8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		551E5DBB229084A90077F8B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551E5DBD229084A90077F8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551E5DC2229084A90077F8B5 /* GithubApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E5DC6229084A90077F8B5 /* GithubApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiTests.swift; sourceTree = "<group>"; };
@@ -99,9 +95,7 @@
 			children = (
 				551E5DB1229084A90077F8B5 /* AppDelegate.swift */,
 				551E5DB3229084A90077F8B5 /* ViewController.swift */,
-				551E5DB5229084A90077F8B5 /* Main.storyboard */,
 				551E5DB8229084A90077F8B5 /* Assets.xcassets */,
-				551E5DBA229084A90077F8B5 /* LaunchScreen.storyboard */,
 				551E5DBD229084A90077F8B5 /* Info.plist */,
 			);
 			path = GithubApi;
@@ -229,9 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551E5DBC229084A90077F8B5 /* LaunchScreen.storyboard in Resources */,
 				551E5DB9229084A90077F8B5 /* Assets.xcassets in Resources */,
-				551E5DB7229084A90077F8B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,25 +283,6 @@
 			targetProxy = 551E5DCE229084A90077F8B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		551E5DB5229084A90077F8B5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				551E5DB6229084A90077F8B5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		551E5DBA229084A90077F8B5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				551E5DBB229084A90077F8B5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		551E5DD4229084A90077F8B5 /* Debug */ = {
