@@ -30,6 +30,7 @@
 		551E5E0D22908F100077F8B5 /* KIF+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E0C22908F100077F8B5 /* KIF+Swift.swift */; };
 		551E5E1122908F480077F8B5 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E1022908F480077F8B5 /* RepoCell.swift */; };
 		551E5E12229090930077F8B5 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE3229087190077F8B5 /* KIF.framework */; };
+		551E5E142290917B0077F8B5 /* ViewControllerTests+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E132290917B0077F8B5 /* ViewControllerTests+Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		551E5E0C22908F100077F8B5 /* KIF+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KIF+Swift.swift"; sourceTree = "<group>"; };
 		551E5E0E22908F280077F8B5 /* GithubApiTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GithubApiTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		551E5E1022908F480077F8B5 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
+		551E5E132290917B0077F8B5 /* ViewControllerTests+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerTests+Network.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 		551E5DC5229084A90077F8B5 /* GithubApiTests */ = {
 			isa = PBXGroup;
 			children = (
+				551E5E132290917B0077F8B5 /* ViewControllerTests+Network.swift */,
 				551E5E0A22908EFA0077F8B5 /* ViewControllerTests.swift */,
 				551E5DFB22908AA80077F8B5 /* ViewModelTests.swift */,
 				551E5DF3229089890077F8B5 /* RepositoryTests.swift */,
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551E5DFE22908ACA0077F8B5 /* MockRepository.swift in Sources */,
+				551E5E142290917B0077F8B5 /* ViewControllerTests+Network.swift in Sources */,
 				551E5DEE229088510077F8B5 /* RepoTests.swift in Sources */,
 				551E5DFC22908AA80077F8B5 /* ViewModelTests.swift in Sources */,
 				551E5E0D22908F100077F8B5 /* KIF+Swift.swift in Sources */,
