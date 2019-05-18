@@ -1,0 +1,12 @@
+{
+    "items": [
+        {
+            "name": "repository-name",
+            "owner": {
+                "login": "userlogin",
+                "avatar_url": "xpto://avatar.url"
+            },
+            "stargazers_count": 54321
+        }
+    ]
+}
