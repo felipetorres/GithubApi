@@ -12,6 +12,11 @@
 		551E5DB9229084A90077F8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DB8229084A90077F8B5 /* Assets.xcassets */; };
 		551E5DC7229084A90077F8B5 /* GithubApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DC6229084A90077F8B5 /* GithubApiTests.swift */; };
 		551E5DD2229084A90077F8B5 /* GithubApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */; };
+		551E5DE0229086350077F8B5 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DDF229086350077F8B5 /* Cartfile */; };
+		551E5DE62290871A0077F8B5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE2229087190077F8B5 /* Alamofire.framework */; };
+		551E5DE72290871A0077F8B5 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE3229087190077F8B5 /* KIF.framework */; };
+		551E5DE82290871A0077F8B5 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE4229087190077F8B5 /* Kingfisher.framework */; };
+		551E5DE92290871A0077F8B5 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE52290871A0077F8B5 /* Gloss.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,11 @@
 		551E5DCD229084A90077F8B5 /* GithubApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiUITests.swift; sourceTree = "<group>"; };
 		551E5DD3229084A90077F8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551E5DDF229086350077F8B5 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		551E5DE2229087190077F8B5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		551E5DE3229087190077F8B5 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
+		551E5DE4229087190077F8B5 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		551E5DE52290871A0077F8B5 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = Carthage/Build/iOS/Gloss.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551E5DE62290871A0077F8B5 /* Alamofire.framework in Frameworks */,
+				551E5DE72290871A0077F8B5 /* KIF.framework in Frameworks */,
+				551E5DE82290871A0077F8B5 /* Kingfisher.framework in Frameworks */,
+				551E5DE92290871A0077F8B5 /* Gloss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,10 +87,12 @@
 		551E5DA5229084A90077F8B5 = {
 			isa = PBXGroup;
 			children = (
+				551E5DDF229086350077F8B5 /* Cartfile */,
 				551E5DB0229084A90077F8B5 /* GithubApi */,
 				551E5DC5229084A90077F8B5 /* GithubApiTests */,
 				551E5DD0229084A90077F8B5 /* GithubApiUITests */,
 				551E5DAF229084A90077F8B5 /* Products */,
+				551E5DE1229087190077F8B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,17 @@
 			path = GithubApiUITests;
 			sourceTree = "<group>";
 		};
+		551E5DE1229087190077F8B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551E5DE2229087190077F8B5 /* Alamofire.framework */,
+				551E5DE52290871A0077F8B5 /* Gloss.framework */,
+				551E5DE3229087190077F8B5 /* KIF.framework */,
+				551E5DE4229087190077F8B5 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +156,7 @@
 				551E5DAA229084A90077F8B5 /* Sources */,
 				551E5DAB229084A90077F8B5 /* Frameworks */,
 				551E5DAC229084A90077F8B5 /* Resources */,
+				551E5DEA229087230077F8B5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -223,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551E5DE0229086350077F8B5 /* Cartfile in Resources */,
 				551E5DB9229084A90077F8B5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +271,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		551E5DEA229087230077F8B5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Gloss.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Gloss.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KIF.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		551E5DAA229084A90077F8B5 /* Sources */ = {
@@ -407,6 +464,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHEDBSZHY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,6 +486,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHEDBSZHY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubApi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

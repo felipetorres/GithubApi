@@ -1,0 +1,4 @@
+github "Alamofire/Alamofire" == 4.8.2
+github "hkellaway/Gloss" == 2.1.1
+github "onevcat/Kingfisher" ~> 4.0
+github "kif-framework/KIF" == 3.7.7
