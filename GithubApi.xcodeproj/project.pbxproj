@@ -10,7 +10,6 @@
 		551E5DB2229084A90077F8B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DB1229084A90077F8B5 /* AppDelegate.swift */; };
 		551E5DB4229084A90077F8B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DB3229084A90077F8B5 /* ViewController.swift */; };
 		551E5DB9229084A90077F8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DB8229084A90077F8B5 /* Assets.xcassets */; };
-		551E5DC7229084A90077F8B5 /* GithubApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DC6229084A90077F8B5 /* GithubApiTests.swift */; };
 		551E5DD2229084A90077F8B5 /* GithubApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */; };
 		551E5DE0229086350077F8B5 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DDF229086350077F8B5 /* Cartfile */; };
 		551E5DE62290871A0077F8B5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE2229087190077F8B5 /* Alamofire.framework */; };
@@ -27,6 +26,10 @@
 		551E5DFA22908A8E0077F8B5 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DF922908A8E0077F8B5 /* ViewModel.swift */; };
 		551E5DFC22908AA80077F8B5 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DFB22908AA80077F8B5 /* ViewModelTests.swift */; };
 		551E5DFE22908ACA0077F8B5 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DFD22908ACA0077F8B5 /* MockRepository.swift */; };
+		551E5E0B22908EFA0077F8B5 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E0A22908EFA0077F8B5 /* ViewControllerTests.swift */; };
+		551E5E0D22908F100077F8B5 /* KIF+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E0C22908F100077F8B5 /* KIF+Swift.swift */; };
+		551E5E1122908F480077F8B5 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E1022908F480077F8B5 /* RepoCell.swift */; };
+		551E5E12229090930077F8B5 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE3229087190077F8B5 /* KIF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +56,6 @@
 		551E5DB8229084A90077F8B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551E5DBD229084A90077F8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551E5DC2229084A90077F8B5 /* GithubApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		551E5DC6229084A90077F8B5 /* GithubApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiTests.swift; sourceTree = "<group>"; };
 		551E5DC8229084A90077F8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551E5DCD229084A90077F8B5 /* GithubApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiUITests.swift; sourceTree = "<group>"; };
@@ -73,6 +75,10 @@
 		551E5DF922908A8E0077F8B5 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		551E5DFB22908AA80077F8B5 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		551E5DFD22908ACA0077F8B5 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
+		551E5E0A22908EFA0077F8B5 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		551E5E0C22908F100077F8B5 /* KIF+Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KIF+Swift.swift"; sourceTree = "<group>"; };
+		551E5E0E22908F280077F8B5 /* GithubApiTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GithubApiTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		551E5E1022908F480077F8B5 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551E5E12229090930077F8B5 /* KIF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +138,7 @@
 			children = (
 				551E5DB1229084A90077F8B5 /* AppDelegate.swift */,
 				551E5DB3229084A90077F8B5 /* ViewController.swift */,
+				551E5E1022908F480077F8B5 /* RepoCell.swift */,
 				551E5DF922908A8E0077F8B5 /* ViewModel.swift */,
 				551E5DEF229089460077F8B5 /* Repository.swift */,
 				551E5DF1229089620077F8B5 /* RepositoryProtocol.swift */,
@@ -144,7 +152,7 @@
 		551E5DC5229084A90077F8B5 /* GithubApiTests */ = {
 			isa = PBXGroup;
 			children = (
-				551E5DC6229084A90077F8B5 /* GithubApiTests.swift */,
+				551E5E0A22908EFA0077F8B5 /* ViewControllerTests.swift */,
 				551E5DFB22908AA80077F8B5 /* ViewModelTests.swift */,
 				551E5DF3229089890077F8B5 /* RepositoryTests.swift */,
 				551E5DED229088510077F8B5 /* RepoTests.swift */,
@@ -152,6 +160,8 @@
 				551E5DF5229089AF0077F8B5 /* MockResponse.swift */,
 				551E5DF7229089CF0077F8B5 /* sampleResponse.json */,
 				551E5DC8229084A90077F8B5 /* Info.plist */,
+				551E5E0C22908F100077F8B5 /* KIF+Swift.swift */,
+				551E5E0E22908F280077F8B5 /* GithubApiTests-Bridging-Header.h */,
 			);
 			path = GithubApiTests;
 			sourceTree = "<group>";
@@ -248,6 +258,7 @@
 					};
 					551E5DC1229084A90077F8B5 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 551E5DAD229084A90077F8B5;
 					};
 					551E5DCC229084A90077F8B5 = {
@@ -322,7 +333,6 @@
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Gloss.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/KIF.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551E5DF2229089620077F8B5 /* RepositoryProtocol.swift in Sources */,
+				551E5E1122908F480077F8B5 /* RepoCell.swift in Sources */,
 				551E5DEC229088330077F8B5 /* Repo.swift in Sources */,
 				551E5DB4229084A90077F8B5 /* ViewController.swift in Sources */,
 				551E5DB2229084A90077F8B5 /* AppDelegate.swift in Sources */,
@@ -349,12 +360,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551E5DC7229084A90077F8B5 /* GithubApiTests.swift in Sources */,
 				551E5DFE22908ACA0077F8B5 /* MockRepository.swift in Sources */,
 				551E5DEE229088510077F8B5 /* RepoTests.swift in Sources */,
 				551E5DFC22908AA80077F8B5 /* ViewModelTests.swift in Sources */,
+				551E5E0D22908F100077F8B5 /* KIF+Swift.swift in Sources */,
 				551E5DF6229089AF0077F8B5 /* MockResponse.swift in Sources */,
 				551E5DF4229089890077F8B5 /* RepositoryTests.swift in Sources */,
+				551E5E0B22908EFA0077F8B5 /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,8 +559,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHEDBSZHY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -557,6 +574,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.GithubApiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GithubApiTests/GithubApiTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubApi.app/GithubApi";
@@ -568,8 +587,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUHEDBSZHY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GithubApiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.app.GithubApiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GithubApiTests/GithubApiTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GithubApi.app/GithubApi";
