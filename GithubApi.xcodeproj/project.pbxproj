@@ -17,6 +17,8 @@
 		551E5DE72290871A0077F8B5 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE3229087190077F8B5 /* KIF.framework */; };
 		551E5DE82290871A0077F8B5 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE4229087190077F8B5 /* Kingfisher.framework */; };
 		551E5DE92290871A0077F8B5 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE52290871A0077F8B5 /* Gloss.framework */; };
+		551E5DEC229088330077F8B5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DEB229088330077F8B5 /* Repo.swift */; };
+		551E5DEE229088510077F8B5 /* RepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DED229088510077F8B5 /* RepoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		551E5DE3229087190077F8B5 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
 		551E5DE4229087190077F8B5 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		551E5DE52290871A0077F8B5 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = Carthage/Build/iOS/Gloss.framework; sourceTree = "<group>"; };
+		551E5DEB229088330077F8B5 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		551E5DED229088510077F8B5 /* RepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				551E5DB1229084A90077F8B5 /* AppDelegate.swift */,
 				551E5DB3229084A90077F8B5 /* ViewController.swift */,
 				551E5DB8229084A90077F8B5 /* Assets.xcassets */,
+				551E5DEB229088330077F8B5 /* Repo.swift */,
 				551E5DBD229084A90077F8B5 /* Info.plist */,
 			);
 			path = GithubApi;
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				551E5DC6229084A90077F8B5 /* GithubApiTests.swift */,
+				551E5DED229088510077F8B5 /* RepoTests.swift */,
 				551E5DC8229084A90077F8B5 /* Info.plist */,
 			);
 			path = GithubApiTests;
@@ -305,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551E5DEC229088330077F8B5 /* Repo.swift in Sources */,
 				551E5DB4229084A90077F8B5 /* ViewController.swift in Sources */,
 				551E5DB2229084A90077F8B5 /* AppDelegate.swift in Sources */,
 			);
@@ -315,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				551E5DC7229084A90077F8B5 /* GithubApiTests.swift in Sources */,
+				551E5DEE229088510077F8B5 /* RepoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
