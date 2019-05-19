@@ -1,0 +1,20 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run tests with coverage"
+  lane :tests do
+    scan(
+      project: "GithubApi.xcodeproj",
+      scheme: "GithubApi",
+      derived_data_path: "Build/DerivedDataPath",	
+      code_coverage: "true"
+    )
+    slather(
+      proj: "GithubApi.xcodeproj",
+      scheme: "GithubApi",
+      build_directory: "Build/DerivedDataPath",
+      output_directory: "./fastlane/test_coverage",
+      html: "true"
+    )
+  end
+end
