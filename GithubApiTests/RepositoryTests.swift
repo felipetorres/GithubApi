@@ -3,16 +3,9 @@ import XCTest
 
 class RepositoryTests: XCTestCase {
     
-    var sampleResponseJson: Any!
-    
-    override func setUp() {
-        do {
-            sampleResponseJson = try MockResponse.withContext(self)
-        } catch {
-            print(error.localizedDescription)
-            XCTFail()
-        }
-    }
+    private lazy var sampleResponseJson: Data? = {
+        try? MockResponse.withContext(self)
+    }()
     
     func testShouldReturnTheFirstPage() {
         let repository = Repository()

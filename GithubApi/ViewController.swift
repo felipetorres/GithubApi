@@ -6,7 +6,7 @@ class ViewController: UIViewController {
     private var kvo: NSKeyValueObservation!
     
     lazy var vm: ViewModel = {
-        return ViewModel(repository: Repository())
+        ViewModel(repository: Repository())
     }()
     
     private var repos = [Repo]() {
@@ -31,19 +31,21 @@ class ViewController: UIViewController {
         tableView.refreshControl = UIRefreshControl()
         tableView.register(RepoCell.self, forCellReuseIdentifier: RepoCell.id)
         
-        tableView.refreshControl!.addTarget(self, action: #selector(onRefresh(_:)), for: .valueChanged)
+        tableView.refreshControl!.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         
-        kvo = vm.getRepos().observe(\.value, options: [.new]) { _, change in
-            self.update(with: change.newValue!)
+        kvo = vm.getRepos().observe {
+            self.update(with: $1.newValue)
         }
     }
     
-    @objc private func onRefresh(_ sender: Any) {
+    @objc private func onRefresh() {
         tableView.refreshControl!.beginRefreshing()
         vm.resetPagination()
     }
     
-    private func update(with newValue: [Repo]) {
+    private func update(with newValue: [Repo]?) {
+        guard let newValue = newValue else { return }
+
         if tableView.refreshControl!.isRefreshing {
             self.repos = newValue
         } else {
@@ -63,7 +65,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UITableViewDataSource {
+extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return repos.count
@@ -76,7 +78,7 @@ extension ViewController : UITableViewDataSource {
     }
 }
 
-extension ViewController : UITableViewDelegate {
+extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if repos.count - indexPath.row == 10 {

@@ -12,10 +12,6 @@
 		551E5DB9229084A90077F8B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DB8229084A90077F8B5 /* Assets.xcassets */; };
 		551E5DD2229084A90077F8B5 /* GithubApiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */; };
 		551E5DE0229086350077F8B5 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 551E5DDF229086350077F8B5 /* Cartfile */; };
-		551E5DE62290871A0077F8B5 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE2229087190077F8B5 /* Alamofire.framework */; };
-		551E5DE72290871A0077F8B5 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE3229087190077F8B5 /* KIF.framework */; };
-		551E5DE82290871A0077F8B5 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE4229087190077F8B5 /* Kingfisher.framework */; };
-		551E5DE92290871A0077F8B5 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE52290871A0077F8B5 /* Gloss.framework */; };
 		551E5DEC229088330077F8B5 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DEB229088330077F8B5 /* Repo.swift */; };
 		551E5DEE229088510077F8B5 /* RepoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DED229088510077F8B5 /* RepoTests.swift */; };
 		551E5DF0229089460077F8B5 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5DEF229089460077F8B5 /* Repository.swift */; };
@@ -29,7 +25,6 @@
 		551E5E0B22908EFA0077F8B5 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E0A22908EFA0077F8B5 /* ViewControllerTests.swift */; };
 		551E5E0D22908F100077F8B5 /* KIF+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E0C22908F100077F8B5 /* KIF+Swift.swift */; };
 		551E5E1122908F480077F8B5 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E1022908F480077F8B5 /* RepoCell.swift */; };
-		551E5E12229090930077F8B5 /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551E5DE3229087190077F8B5 /* KIF.framework */; };
 		551E5E142290917B0077F8B5 /* ViewControllerTests+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E132290917B0077F8B5 /* ViewControllerTests+Network.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,10 +57,6 @@
 		551E5DD1229084A90077F8B5 /* GithubApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApiUITests.swift; sourceTree = "<group>"; };
 		551E5DD3229084A90077F8B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		551E5DDF229086350077F8B5 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		551E5DE2229087190077F8B5 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		551E5DE3229087190077F8B5 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
-		551E5DE4229087190077F8B5 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
-		551E5DE52290871A0077F8B5 /* Gloss.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gloss.framework; path = Carthage/Build/iOS/Gloss.framework; sourceTree = "<group>"; };
 		551E5DEB229088330077F8B5 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		551E5DED229088510077F8B5 /* RepoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTests.swift; sourceTree = "<group>"; };
 		551E5DEF229089460077F8B5 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
@@ -88,10 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551E5DE62290871A0077F8B5 /* Alamofire.framework in Frameworks */,
-				551E5DE72290871A0077F8B5 /* KIF.framework in Frameworks */,
-				551E5DE82290871A0077F8B5 /* Kingfisher.framework in Frameworks */,
-				551E5DE92290871A0077F8B5 /* Gloss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551E5E12229090930077F8B5 /* KIF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,10 +167,6 @@
 		551E5DE1229087190077F8B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				551E5DE2229087190077F8B5 /* Alamofire.framework */,
-				551E5DE52290871A0077F8B5 /* Gloss.framework */,
-				551E5DE3229087190077F8B5 /* KIF.framework */,
-				551E5DE4229087190077F8B5 /* Kingfisher.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,7 +309,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Gloss.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
@@ -335,7 +316,6 @@
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Gloss.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

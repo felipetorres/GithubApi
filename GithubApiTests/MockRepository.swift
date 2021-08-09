@@ -1,5 +1,4 @@
 import Foundation
-import Gloss
 @testable import GithubApi
 
 class MockRepository : RepositoryProtocol {

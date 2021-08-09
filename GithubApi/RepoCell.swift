@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import Kingfisher
 
-class RepoCell : UITableViewCell {
+class RepoCell: UITableViewCell {
     
     static let id = "cell"
     

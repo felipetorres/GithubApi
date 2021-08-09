@@ -3,11 +3,7 @@ import XCTest
 
 class ViewModelTests: XCTestCase {
     
-    var viewModel: ViewModel!
-    
-    override func setUp() {
-        self.viewModel = ViewModel(repository: MockRepository())
-    }
+    private let viewModel = ViewModel(repository: MockRepository())
     
     func testShouldGetRepoElementsFromRepository() {
         let liveData = viewModel.getRepos()

@@ -11,9 +11,9 @@ class ViewModel {
     }
     
     func getRepos() -> SimpleLiveData {
-        repository.getRepos(onPage: pageNumber) { response in
+        repository.getRepos(onPage: pageNumber) {
             self.pageNumber += 1
-            self.liveData.value = response
+            self.liveData.value = $0
         }
         return liveData
     }
@@ -24,7 +24,14 @@ class ViewModel {
     }
 }
 
-class SimpleLiveData : NSObject {
-    @objc dynamic var value : [Repo]!
+class SimpleLiveData: NSObject {
+    @objc dynamic var value: [Repo]!
+}
+
+extension SimpleLiveData {
+    
+    func observe(changeHandler: @escaping (SimpleLiveData, NSKeyValueObservedChange<[Repo]>) -> Void) -> NSKeyValueObservation {
+        return observe(\.value, options: [.new], changeHandler: changeHandler)
+    }
 }
 
