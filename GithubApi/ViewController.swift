@@ -78,7 +78,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if repos.count - indexPath.row == 10 {
-            _ = vm.getRepos()
+            vm.getRepos()
         }
     }
 }

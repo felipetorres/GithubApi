@@ -8,6 +8,7 @@ class ViewModel {
         self.repository = repository
     }
     
+    @discardableResult
     func getRepos() -> SimpleLiveData<[Repo]> {
         repository.getRepos(onPage: pageNumber) {
             self.pageNumber += 1
@@ -18,6 +19,6 @@ class ViewModel {
     
     func resetPagination() {
         pageNumber = 1
-        _ = getRepos()
+        getRepos()
     }
 }
