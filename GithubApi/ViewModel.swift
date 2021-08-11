@@ -1,8 +1,6 @@
-import Foundation
-
 class ViewModel {
     
-    private let liveData = SimpleLiveData()
+    private let liveData = SimpleLiveData<[Repo]>()
     private let repository: RepositoryProtocol
     private var pageNumber = 1
     
@@ -10,7 +8,7 @@ class ViewModel {
         self.repository = repository
     }
     
-    func getRepos() -> SimpleLiveData {
+    func getRepos() -> SimpleLiveData<[Repo]> {
         repository.getRepos(onPage: pageNumber) {
             self.pageNumber += 1
             self.liveData.value = $0
@@ -23,15 +21,3 @@ class ViewModel {
         _ = getRepos()
     }
 }
-
-class SimpleLiveData: NSObject {
-    @objc dynamic var value: [Repo]!
-}
-
-extension SimpleLiveData {
-    
-    func observe(changeHandler: @escaping (SimpleLiveData, NSKeyValueObservedChange<[Repo]>) -> Void) -> NSKeyValueObservation {
-        return observe(\.value, options: [.new], changeHandler: changeHandler)
-    }
-}
-

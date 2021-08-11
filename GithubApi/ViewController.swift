@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     override func loadView() {
         super.loadView()
         tableView.accessibilityIdentifier = "tableView"
+        tableView.separatorStyle = .none
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -33,9 +34,7 @@ class ViewController: UIViewController {
         
         tableView.refreshControl!.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
         
-        kvo = vm.getRepos().observe {
-            self.update(with: $1.newValue)
-        }
+        kvo = vm.getRepos().observe { self.update(with: $0) }
     }
     
     @objc private func onRefresh() {

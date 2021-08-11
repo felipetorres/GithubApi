@@ -9,7 +9,7 @@ class ViewModelTests: XCTestCase {
         let liveData = viewModel.getRepos()
         XCTAssertNotNil(liveData.value)
         
-        let repos = liveData.value!
+        let repos = liveData.value
         
         XCTAssertEqual(repos.count, 1)
         

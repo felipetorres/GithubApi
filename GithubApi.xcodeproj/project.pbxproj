@@ -26,6 +26,8 @@
 		551E5E0D22908F100077F8B5 /* KIF+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E0C22908F100077F8B5 /* KIF+Swift.swift */; };
 		551E5E1122908F480077F8B5 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E1022908F480077F8B5 /* RepoCell.swift */; };
 		551E5E142290917B0077F8B5 /* ViewControllerTests+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551E5E132290917B0077F8B5 /* ViewControllerTests+Network.swift */; };
+		556CF0DE26C2B869006787EE /* SimpleLiveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556CF0DD26C2B869006787EE /* SimpleLiveData.swift */; };
+		556CF0EC26C39670006787EE /* UIView+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556CF0EB26C39670006787EE /* UIView+SnapKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		551E5E0E22908F280077F8B5 /* GithubApiTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GithubApiTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		551E5E1022908F480077F8B5 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
 		551E5E132290917B0077F8B5 /* ViewControllerTests+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewControllerTests+Network.swift"; sourceTree = "<group>"; };
+		556CF0DD26C2B869006787EE /* SimpleLiveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLiveData.swift; sourceTree = "<group>"; };
+		556CF0EB26C39670006787EE /* UIView+SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SnapKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,11 +132,13 @@
 				551E5DB3229084A90077F8B5 /* ViewController.swift */,
 				551E5E1022908F480077F8B5 /* RepoCell.swift */,
 				551E5DF922908A8E0077F8B5 /* ViewModel.swift */,
+				556CF0DD26C2B869006787EE /* SimpleLiveData.swift */,
 				551E5DEF229089460077F8B5 /* Repository.swift */,
 				551E5DF1229089620077F8B5 /* RepositoryProtocol.swift */,
 				551E5DEB229088330077F8B5 /* Repo.swift */,
 				551E5DB8229084A90077F8B5 /* Assets.xcassets */,
 				551E5DBD229084A90077F8B5 /* Info.plist */,
+				556CF0EB26C39670006787EE /* UIView+SnapKit.swift */,
 			);
 			path = GithubApi;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -332,6 +339,8 @@
 				551E5DF2229089620077F8B5 /* RepositoryProtocol.swift in Sources */,
 				551E5E1122908F480077F8B5 /* RepoCell.swift in Sources */,
 				551E5DEC229088330077F8B5 /* Repo.swift in Sources */,
+				556CF0DE26C2B869006787EE /* SimpleLiveData.swift in Sources */,
+				556CF0EC26C39670006787EE /* UIView+SnapKit.swift in Sources */,
 				551E5DB4229084A90077F8B5 /* ViewController.swift in Sources */,
 				551E5DB2229084A90077F8B5 /* AppDelegate.swift in Sources */,
 				551E5DFA22908A8E0077F8B5 /* ViewModel.swift in Sources */,
