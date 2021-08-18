@@ -1,6 +1,6 @@
 class ViewModel {
     
-    private let liveData = SimpleLiveData<[Repo]>()
+    private let liveData = MutableLiveData<[Repo]>()
     private let repository: RepositoryProtocol
     private var pageNumber = 1
     
@@ -9,7 +9,7 @@ class ViewModel {
     }
     
     @discardableResult
-    func getRepos() -> SimpleLiveData<[Repo]> {
+    func getRepos() -> LiveData<[Repo]> {
         repository.getRepos(onPage: pageNumber) {
             self.pageNumber += 1
             self.liveData.value = $0

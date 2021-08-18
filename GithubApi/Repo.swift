@@ -1,5 +1,3 @@
-import Foundation
-
 class Items: Codable {
     
     let repos: [Repo]
@@ -9,7 +7,7 @@ class Items: Codable {
     }
 }
 
-class Repo: NSObject, Codable {
+class Repo: Codable {
     
     let name: String?
     let stars: Int?
@@ -30,7 +28,7 @@ class Repo: NSObject, Codable {
     }
 }
 
-fileprivate class Owner: NSObject, Codable {
+fileprivate class Owner: Codable {
     
     fileprivate let avatarUrl: String?
     fileprivate let authorName: String?
